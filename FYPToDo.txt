@@ -1,0 +1,6 @@
+radio buttons required
+//fix questions
+//switch statements to check if result string is equal to which personality
+create 16 personality pages
+keep radio button selection for when back button is clicked
+
