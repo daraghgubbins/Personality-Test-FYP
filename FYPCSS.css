@@ -12,3 +12,10 @@ body {
 		margin-top:-55px;
 		margin-right:-180px;
 }
+.text-primary mark { 
+    background-color: #FFFF66;
+	color:#3399FF;
+}
+.center-block p{
+    color:#707070;
+}
