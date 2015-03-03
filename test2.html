@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Agree <input class="r" min="-3" max="3" type="range" id="myRange" value="0"> Disagree <br>
+Agree <input class="r" min="-3" max="3" type="range" id="myRange1" value="0"> Disagree <br>
+Agree <input class="r" min="-3" max="3" type="range" id="myRange2" value="0"> Disagree <br>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementByClassName("r").value;
+    document.getElementById("demo").innerHTML = x;
+	var values =;
+	for(var i=0; i<x.length; i++) {
+    values += x[i].value;
+}
+document.write(values);
+}
+</script>
+
+</body>
+</html>

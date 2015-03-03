@@ -3,5 +3,7 @@ radio buttons required
 //switch statements to check if result string is equal to which personality
 create 16 personality pages
 keep radio button selection for when back button is clicked
-test
-
+splash screen/loading screen
+make an app logo
+change test.html to index.html
+bootstrap collapse for the 16 types page

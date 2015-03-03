@@ -19,3 +19,9 @@ body {
 .center-block p{
     color:#707070;
 }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 15%;
+      margin: auto;
+  }
