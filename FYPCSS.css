@@ -25,3 +25,25 @@ body {
       width: 15%;
       margin: auto;
   }
+.fa-thumbs-down {
+  color: #e55451;
+  padding:5px;
+}
+.fa-thumbs-up {
+  color: #85bb65;
+    padding:5px;
+}
+
+div .row{
+    border: 1px solid #dddddd;
+	width:99%;
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 5px;
+    background: #eeeeee;
+    border-radius: 10px;
+}
+.row .btn{
+padding:1px;
+
+}
