@@ -35,7 +35,7 @@ body {
 }
 
 div .row{
-    border: 1px solid #dddddd;
+    border: 1px solid #cccccc;
 	width:99%;
 	margin-left: auto;
     margin-right: auto;
@@ -44,6 +44,6 @@ div .row{
     border-radius: 10px;
 }
 .row .btn{
-padding:1px;
-
+	padding:1px;
+    background: #eeeeee;
 }
