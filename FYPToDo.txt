@@ -1,13 +1,11 @@
-radio buttons required
 //fix questions
-//switch statements to check if result string is equal to which personality
-create 16 personality pages
-//keep radio button selection for when back button is clicked
-splash screen/loading screen
-make an app logo
-change test.html to index.html
-bootstrap collapse for the 16 types page
 //change extensive test questions div section colors to grey scale
+//switch statements to check if result string is equal to which personality
+//keep radio button selection for when back button is clicked
+radio buttons required
+make an app logo
+bootstrap collapse for the 16 types page
+create 16 personality pages
 bookmark for radio buttons
 pop up screen when entering the test pages, giving the instructions
 left and right movement on the 16 personalities page
@@ -18,5 +16,8 @@ possibly new index - go to app of learn about app (buttons)
 check if internet is required to load the bootstrap
 no back buttons on test - function to check if value is 0 and display message
 change buttons on extensive test so its highlighted when clicked
+make results page that both quick and extensive test can use
+move the image carosol down on the image
+
 
 

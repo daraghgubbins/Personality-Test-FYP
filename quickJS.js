@@ -223,11 +223,7 @@ function GetResults(){
     results=result[i]+results;
 	}
 	
-	var y = document.getElementById("image");
-	y.innerHTML="<h2>Your Results</h2>" +
-	"<div><p> <strong> "+ results +" <strong/></p></div>";
-	var z = document.getElementById("buttons");
-	z.innerHTML="<img src=\"" + results + ".jpg\"/>";
+	window.location.href="ENFJ-page.html";
 }
 
 

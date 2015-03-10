@@ -100,14 +100,14 @@ function page2(){
 	var x = document.getElementById("section");
 	x.innerHTML = '<div>'+
   '<h1 class="text-primary" style="font-family:verdana"><b>Extensive Test</b></h1>'+
-  '<h4 class="text-warning" style="font-family:verdana"><b>Section One</b></h4>'+
+  '<h4 class="text-warning" style="font-family:verdana"><b>Section Two</b></h4>'+
 '</div>'+
 
  '<div class="container-fluid">'+
  	'<div align="center" class="container"> '+
 	'	<div class="progress" style="width:300px" >'+
-		'	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">'+
-		'	 50%</div>'+
+		'	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">'+
+		'	 25%</div>'+
 		'</div>'+
 	'</div> '+
 		'<div id="section1" class="row">'+
@@ -325,7 +325,7 @@ function page2(){
 			'</div>'+
 		'</div>'+
 					  '<button type="button" class="btn btn-info btn-md" onclick= parent.location="index.html" style="margin-bottom:15px;">Home</button>'+
-	 ' <button type="button" class="btn btn-info btn-md" onclick="addScore();SorN();page3()" style="margin-left:70px; margin-bottom:15px;">Next</button>'+
+	 ' <a type="button" class="btn btn-info btn-md" href="#" onclick="addScore();SorN();page3()" style="margin-left:70px; margin-bottom:15px;">Next</a>'+
 		'</div>';
 
 		
@@ -335,7 +335,7 @@ function page3(){
 	var x = document.getElementById("section");
 	x.innerHTML = '<div>'+
   '<h1 class="text-primary" style="font-family:verdana"><b>Extensive Test</b></h1>'+
-  '<h4 class="text-warning" style="font-family:verdana"><b>Section One</b></h4>'+
+  '<h4 class="text-warning" style="font-family:verdana"><b>Section Three</b></h4>'+
 '</div>'+
 
  '<div class="container-fluid">'+
@@ -560,7 +560,7 @@ function page3(){
 			'</div>'+
 		'</div>'+
 					  '<button type="button" class="btn btn-info btn-md" onclick= parent.location="index.html" style="margin-bottom:15px;">Home</button>'+
-	 ' <button type="button" class="btn btn-info btn-md" onclick="addScore();TorF();page4()" style="margin-left:70px; margin-bottom:15px;">Next</button>'+
+	 ' <a type="button" class="btn btn-info btn-md" href="#" onclick="addScore();TorF();page4()" style="margin-left:70px; margin-bottom:15px;">Next</a>'+
 		'</div>';
 
 		
@@ -570,14 +570,14 @@ function page4(){
 	var x = document.getElementById("section");
 	x.innerHTML = '<div>'+
   '<h1 class="text-primary" style="font-family:verdana"><b>Extensive Test</b></h1>'+
-  '<h4 class="text-warning" style="font-family:verdana"><b>Section One</b></h4>'+
+  '<h4 class="text-warning" style="font-family:verdana"><b>Section Four</b></h4>'+
 '</div>'+
 
  '<div class="container-fluid">'+
  	'<div align="center" class="container"> '+
 	'	<div class="progress" style="width:300px" >'+
-		'	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">'+
-		'	 50%</div>'+
+		'	<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">'+
+		'	 75%</div>'+
 		'</div>'+
 	'</div> '+
 		'<div id="section1" class="row">'+

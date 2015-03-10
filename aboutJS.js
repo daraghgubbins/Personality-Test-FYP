@@ -12,3 +12,18 @@ function CP(){
 	var x = document.getElementById("content-display");
 	x.innerHTML="<div class='center-block'><h4>Career Path</h4><p></p></div>";
 }
+
+var newsrc = "ESFJ-pic2.jpg";
+
+function changeImage() {
+  if ( newsrc == "ESFJ-pic2.jpg" ) {
+    document.images["pic"].src = "celebpics/ESFJ-pic2.jpg";
+    document.images["pic"].alt = "pic2";
+    newsrc  = "ENFJ-pic.jpg";
+  }
+  else {
+    document.images["pic"].src = "celebpics/ENFJ-pic.jpg";
+    document.images["pic"].alt = "ENFJ-pic";
+    newsrc  = "ESFJ-pic2.jpg";
+  }
+}
