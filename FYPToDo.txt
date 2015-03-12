@@ -17,7 +17,6 @@ check if internet is required to load the bootstrap
 no back buttons on test - function to check if value is 0 and display message
 change buttons on extensive test so its highlighted when clicked
 make results page that both quick and extensive test can use
-move the image carosol down on the image
 
 
 

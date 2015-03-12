@@ -27,8 +27,7 @@ function QuestionTwo(){
 	"</div><p><strong>How do you prefer to solve a problem?</strong></p><form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="EorI" value=-1>Working it out by yourself,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="EorI" value=1>Working as part of a team</label></div> </form>'+
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionOne()">Back</button>'+
-	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionThree()" style="margin-left:70px;">Next</button> ';
+	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionThree()">Next</button> ';
 }
 
 function QuestionThree(){
@@ -41,8 +40,7 @@ function QuestionThree(){
 	"</div><strong><p>How do you prefer to communicate with others?</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="EorI" value=1>Meet someone face to face,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="EorI" value=-1>Communicate through text or email</label> </div> </form> ' +
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionTwo()">Back</button>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionFour()" style="margin-left:70px;">Next</button>';
+	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionFour()">Next</button>';
 }
 function QuestionFour(){
 	finalScore=finalScore+score;
@@ -57,8 +55,7 @@ function QuestionFour(){
 	"</div><p><strong>How do you normally remember events?</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="NorS" value=-1>As an impression of what it was like,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="NorS" value=1>Based on snapshots of what actually happened</label> </div> </form>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionThree()">Back</button>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionFive()" style="margin-left:70px;">Next</button>';
+	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionFive()">Next</button>';
 }
 function QuestionFive(){
 	finalScore=finalScore+score;
@@ -70,8 +67,7 @@ function QuestionFive(){
 	"</div>  <p><strong>How to you normally process information?</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="NorS" value=1>By what you see, hear, touch, taste and smell,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="NorS" value=-1>By paying attention to the patterns</label> </div> </form>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionFour()">Back</button>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionSix()" style="margin-left:70px;">Next</button>';
+	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionSix()">Next</button>';
 }
 function QuestionSix(){
 	finalScore=finalScore+score;
@@ -83,8 +79,7 @@ function QuestionSix(){
 	"</div>  <p><strong>If you were putting together a table, would you?</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="NorS" value=-1>Follow the instructions step by step,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="NorS" value=1>Try to consturt the table from the picture on the box</label> </div> </form>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionFive()">Back</button>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionSeven()" style="margin-left:70px;">Next</button>';
+	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionSeven()">Next</button>';
 }
 function QuestionSeven(){
 	finalScore=finalScore+score;
@@ -99,8 +94,7 @@ function QuestionSeven(){
 	"</div>  <p><strong>How do you normally make a decision?</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="ForT" value=1>Your actions are logically thought out,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="ForT" value=-1>Your actions are influenced by emotions</label> </div> </form>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionSix()">Back</button>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionEight()" style="margin-left:70px;">Next</button>';
+	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionEight()">Next</button>';
 }
 function QuestionEight(){
 	finalScore=finalScore+score;
@@ -112,8 +106,7 @@ function QuestionEight(){
 	"</div>  <p><strong>How would you deliver bad news?</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="ForT" value=1>You believe telling the "cold" truth is best,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="ForT" value=-1>Be as compassionate as possible</label> </div> </form>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionSeven()">Back</button>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionNine()" style="margin-left:70px;">Next</button>';
+	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionNine()">Next</button>';
 }
 function QuestionNine(){
 	finalScore=finalScore+score;
@@ -125,8 +118,7 @@ function QuestionNine(){
 	"</div>  <p><strong>How do you perceive yourself in a relationship?</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="ForT" value=-1>Caring, warm and tactful,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="ForT" value=1>Truthful, impersonal and consistent</label> </div> </form>'+
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionEight()">Back</button>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionTen()" style="margin-left:70px;">Next</button>';
+	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionTen()">Next</button>';
 }
 function QuestionTen(){
 	finalScore=finalScore+score;
@@ -141,8 +133,7 @@ function QuestionTen(){
 	"</div>  <p><strong>How do you approach your work?</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="JorP" value=1>I like to have a list of things to do,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="JorP" value=-1>I like to keep casual when working</label> </div> </form>'+
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionNine()">Back</button>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionEleven()" style="margin-left:70px;">Next</button>';
+	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionEleven()">Next</button>';
 }
 function QuestionEleven(){
 	finalScore=finalScore+score;
@@ -154,8 +145,7 @@ function QuestionEleven(){
 	"</div>  <p><strong>When approaching to a deadline how do you feel?</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="JorP" value=-1>I am stimulated by an approaching deadline,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="JorP" value=1>Confident, as I plan my work to avoid rushing</label> </div> </form>'+
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionTen()">Back</button>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionTwelve()" style="margin-left:70px;">Next</button>';
+	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionTwelve()">Next</button>';
 }
 function QuestionTwelve(){
 	finalScore=finalScore+score;
@@ -167,8 +157,7 @@ function QuestionTwelve(){
 	"</div>  <p><strong>When working on a difficult problem, do you?:</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="JorP" value=-1>Take breaks and never concentrate 100%,<em> or</em></label> </div> <div class="radio">' +
       '<label><input type="radio" id="q2" onclick="Selection()" name="JorP" value=1>Remain focused until the problem is solved</label> </div> </form>'+
-	  '<button type="button" class="btn btn-info btn-md" onclick= "QuestionEleven()">Back</button>' +
-	  '<button type="button" class="btn btn-info btn-md" onclick="GetResults()" style="margin-left:70px;">Finish</button>';
+	  '<button type="button" class="btn btn-info btn-md" onclick="GetResults()">Finish</button>';
 }
 
 function Selection(){
