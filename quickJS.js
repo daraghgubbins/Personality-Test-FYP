@@ -18,7 +18,7 @@ function QuestionOne(){
   }
 
 function QuestionTwo(){
-	finalScore=finalScore+score;
+	finalScore=score;
 	var x = document.getElementById("buttons");
 	x.innerHTML = "<h2>Question 2:</h2>" +
 	'<div align="center" class="container"> <div class="progress" style="width:300px" > '+
@@ -58,7 +58,7 @@ function QuestionFour(){
 	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionFive()">Next</button>';
 }
 function QuestionFive(){
-	finalScore=finalScore+score;
+	finalScore=score;
 	var x = document.getElementById("buttons");
 	x.innerHTML = "<h2>Question 5:</h2>" +
 	'<div align="center" class="container"> <div class="progress" style="width:300px" > '+
@@ -97,7 +97,7 @@ function QuestionSeven(){
 	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionEight()">Next</button>';
 }
 function QuestionEight(){
-	finalScore=finalScore+score;
+	finalScore=score;
 	var x = document.getElementById("buttons");
 	x.innerHTML = "<h2>Question 8:</h2>" +
 	'<div align="center" class="container"> <div class="progress" style="width:300px" > '+
@@ -136,7 +136,7 @@ function QuestionTen(){
 	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionEleven()">Next</button>';
 }
 function QuestionEleven(){
-	finalScore=finalScore+score;
+	finalScore=score;
 	var x = document.getElementById("buttons");
 	x.innerHTML = "<h2>Question 11:</h2>" +
 	'<div align="center" class="container"> <div class="progress" style="width:300px" > '+
