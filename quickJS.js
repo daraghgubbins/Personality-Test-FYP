@@ -78,7 +78,7 @@ function QuestionSix(){
     '40%</div></div>'+
 	"</div>  <p><strong>If you were putting together a table, would you?</strong></p>  <form role='form'> <div class='radio'>" +
       '<label><input type="radio" id="q1" onclick="Selection()" name="NorS" value=-1>Follow the instructions step by step,<em> or</em></label> </div> <div class="radio">' +
-      '<label><input type="radio" id="q2" onclick="Selection()" name="NorS" value=1>Try to consturt the table from the picture on the box</label> </div> </form>' +
+      '<label><input type="radio" id="q2" onclick="Selection()" name="NorS" value=1>Try to construct the table from the picture on the box</label> </div> </form>' +
 	  '<button type="button" class="btn btn-info btn-md" onclick="QuestionSeven()">Next</button>';
 }
 function QuestionSeven(){
