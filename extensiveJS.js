@@ -3,6 +3,17 @@ var total = 0;
 var finalScore = [];
 var result = []
 
+function checkExtensive(){
+	document.getElementById("btn").disabled = false;
+}
+
+function confirmHome(){
+    if (confirm("Are you sure you want to exit?")== true) {
+		parent.location="index.html";
+	}
+}
+
+
 function Store1(int){
 section1=int;
 alert(section1);
@@ -88,6 +99,17 @@ function JorP(){
 		result.push("P");
 	}
 	alert(result);
+	GetResults();
+}
+
+function GetResults(){
+	var results="";
+	
+	for(i= result.length-1; i>=0;i--){
+    results=result[i]+results;
+	}
+	
+	window.location.href=(""+results+"-page.html");
 }
 
 function reset(){
@@ -110,14 +132,14 @@ function page2(){
 		'	 25%</div>'+
 		'</div>'+
 	'</div> '+
-		'<div id="section1" class="row">'+
+		'<div class="row">'+
 		'	<div><strong>section one</strong></div>'+
 		'	<div class="col-sm-6 col-xs-6">'+
-							'<button class="btn" onclick="Store1(-3)">'+
+							'<button class="btn" onclick="Store1(-3);checkExtensive()">'+
 							'<i class="fa fa-thumbs-down fa-3x"></i></button>'+
-							'<button class="btn" onclick="Store1(-2)">'+
+							'<button class="btn" onclick="Store1(-2);checkExtensive()">'+
 							'<i class="fa fa-thumbs-down fa-2x" id="q2"></i></button>'+
-							'<button class="btn" onclick="Store1(-1)">'+
+							'<button class="btn" onclick="Store1(-1);checkExtensive()">'+
 							'<i class="fa fa-thumbs-down fa-lg" id="q2"></i></button>'+
 							'<div>'+
 							'	<h5 class="text-primary" style="font-family:verdana"><b>Disagree</b></h5>          '+
@@ -125,11 +147,11 @@ function page2(){
 			'</div> '+
 			
 			'<div class="col-sm-6 col-xs-6">'+
-							'<button class="btn" onclick="Store1(1)">'+
+							'<button class="btn" onclick="Store1(1);checkExtensive()">'+
 							'<i class="fa fa-thumbs-up fa-lg"></i></button>'+
-							'<button class="btn" onclick="Store1(2)">'+
+							'<button class="btn" onclick="Store1(2);checkExtensive()">'+
 							'<i class="fa fa-thumbs-up fa-2x" id="q2"></i></button>'+
-							'<button class="btn" onclick="Store1(3)">'+
+							'<button class="btn" onclick="Store1(3);checkExtensive()">'+
 							'<i class="fa fa-thumbs-up fa-3x" id="q2"></i></button>'+
 							'<div>'+
 							'	<h5 class="text-primary" style="font-family:verdana"><b>Agree</b></h5>   '+       
@@ -324,8 +346,8 @@ function page2(){
 							'</div>'+
 			'</div>'+
 		'</div>'+
-					  '<button type="button" class="btn btn-info btn-md" onclick= parent.location="index.html" style="margin-bottom:15px;">Home</button>'+
-	 ' <a type="button" class="btn btn-info btn-md" href="#" onclick="addScore();SorN();page3()" style="margin-left:70px; margin-bottom:15px;">Next</a>'+
+					  '<button type="button" class="btn btn-info btn-md" onclick= "confirmHome()" style="margin-bottom:15px;">Home</button>'+
+	 ' <a href="#"> <button id="btn" type="button" class="btn btn-info btn-md" onclick="addScore();SorN();page3()" disabled style="margin-left:70px; margin-bottom:15px;">Next</button></a>'+
 		'</div>';
 
 		
@@ -348,11 +370,11 @@ function page3(){
 		'<div id="section1" class="row">'+
 		'	<div><strong>section one</strong></div>'+
 		'	<div class="col-sm-6 col-xs-6">'+
-							'<button class="btn" onclick="Store1(-3)">'+
+							'<button class="btn" onclick="Store1(-3);checkExtensive()">'+
 							'<i class="fa fa-thumbs-down fa-3x"></i></button>'+
-							'<button class="btn" onclick="Store1(-2)">'+
+							'<button class="btn" onclick="Store1(-2);checkExtensive()">'+
 							'<i class="fa fa-thumbs-down fa-2x" id="q2"></i></button>'+
-							'<button class="btn" onclick="Store1(-1)">'+
+							'<button class="btn" onclick="Store1(-1);checkExtensive()">'+
 							'<i class="fa fa-thumbs-down fa-lg" id="q2"></i></button>'+
 							'<div>'+
 							'	<h5 class="text-primary" style="font-family:verdana"><b>Disagree</b></h5>          '+
@@ -360,11 +382,11 @@ function page3(){
 			'</div> '+
 			
 			'<div class="col-sm-6 col-xs-6">'+
-							'<button class="btn" onclick="Store1(1)">'+
+							'<button class="btn" onclick="Store1(1);checkExtensive()">'+
 							'<i class="fa fa-thumbs-up fa-lg"></i></button>'+
-							'<button class="btn" onclick="Store1(2)">'+
+							'<button class="btn" onclick="Store1(2);checkExtensive()">'+
 							'<i class="fa fa-thumbs-up fa-2x" id="q2"></i></button>'+
-							'<button class="btn" onclick="Store1(3)">'+
+							'<button class="btn" onclick="Store1(3);checkExtensive()">'+
 							'<i class="fa fa-thumbs-up fa-3x" id="q2"></i></button>'+
 							'<div>'+
 							'	<h5 class="text-primary" style="font-family:verdana"><b>Agree</b></h5>   '+       
@@ -559,8 +581,8 @@ function page3(){
 							'</div>'+
 			'</div>'+
 		'</div>'+
-					  '<button type="button" class="btn btn-info btn-md" onclick= parent.location="index.html" style="margin-bottom:15px;">Home</button>'+
-	 ' <a type="button" class="btn btn-info btn-md" href="#" onclick="addScore();TorF();page4()" style="margin-left:70px; margin-bottom:15px;">Next</a>'+
+					  '<button type="button" class="btn btn-info btn-md" onclick= "confirmHome()" style="margin-bottom:15px;">Home</button>'+
+	 ' <a href="#"><button id="btn" type="button" class="btn btn-info btn-md" onclick="addScore();TorF();page4()" disabled style="margin-left:70px; margin-bottom:15px;">Next</button></a>'+
 		'</div>';
 
 		
@@ -583,11 +605,11 @@ function page4(){
 		'<div id="section1" class="row">'+
 		'	<div><strong>section one</strong></div>'+
 		'	<div class="col-sm-6 col-xs-6">'+
-							'<button class="btn" onclick="Store1(-3)">'+
+							'<button class="btn" onclick="Store1(-3);checkExtensive()">'+
 							'<i class="fa fa-thumbs-down fa-3x"></i></button>'+
-							'<button class="btn" onclick="Store1(-2)">'+
+							'<button class="btn" onclick="Store1(-2);checkExtensive()">'+
 							'<i class="fa fa-thumbs-down fa-2x" id="q2"></i></button>'+
-							'<button class="btn" onclick="Store1(-1)">'+
+							'<button class="btn" onclick="Store1(-1);checkExtensive()">'+
 							'<i class="fa fa-thumbs-down fa-lg" id="q2"></i></button>'+
 							'<div>'+
 							'	<h5 class="text-primary" style="font-family:verdana"><b>Disagree</b></h5>          '+
@@ -595,11 +617,11 @@ function page4(){
 			'</div> '+
 			
 			'<div class="col-sm-6 col-xs-6">'+
-							'<button class="btn" onclick="Store1(1)">'+
+							'<button class="btn" onclick="Store1(1);checkExtensive()">'+
 							'<i class="fa fa-thumbs-up fa-lg"></i></button>'+
-							'<button class="btn" onclick="Store1(2)">'+
+							'<button class="btn" onclick="Store1(2);checkExtensive()">'+
 							'<i class="fa fa-thumbs-up fa-2x" id="q2"></i></button>'+
-							'<button class="btn" onclick="Store1(3)">'+
+							'<button class="btn" onclick="Store1(3);checkExtensive()">'+
 							'<i class="fa fa-thumbs-up fa-3x" id="q2"></i></button>'+
 							'<div>'+
 							'	<h5 class="text-primary" style="font-family:verdana"><b>Agree</b></h5>   '+       
@@ -794,8 +816,8 @@ function page4(){
 							'</div>'+
 			'</div>'+
 		'</div>'+
-					  '<button type="button" class="btn btn-info btn-md" onclick= parent.location="index.html" style="margin-bottom:15px;">Home</button>'+
-	 ' <button type="button" class="btn btn-info btn-md" onclick="addScore();JorP()" style="margin-left:70px; margin-bottom:15px;">Next</button>'+
+					  '<button type="button" class="btn btn-info btn-md" onclick= "confirm()" style="margin-bottom:15px;">Home</button>'+
+	 ' <button id="btn" type="button" class="btn btn-info btn-md" onclick="addScore();JorP()" disabled style="margin-left:70px; margin-bottom:15px;">Finish</button>'+
 		'</div>';
 
 		
