@@ -212,11 +212,8 @@ function GetResults(){
 	var results="";
 	
 	for(i= result.length-1; i>=0;i--){
-    results=result[i]+results;
+    results=result[i]+results; 
 	}
 	
 	window.location.href=(""+results+"-page.html");
 }
-
-
-

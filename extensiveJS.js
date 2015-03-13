@@ -99,17 +99,17 @@ function JorP(){
 		result.push("P");
 	}
 	alert(result);
-	GetResults();
+	GetResults2();
 }
 
-function GetResults(){
-	var results="";
+function GetResults2(){
+	var results2="";
 	
-	for(i= result.length-1; i>=0;i--){
-    results=result[i]+results;
+	for(j= result.length-1; j>=0;j--){
+    results2=result[j]+results2;
 	}
 	
-	window.location.href=(""+results+"-page.html");
+	window.location.href=(""+results2+"-page.html");
 }
 
 function reset(){
