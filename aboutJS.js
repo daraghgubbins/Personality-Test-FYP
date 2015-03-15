@@ -163,18 +163,18 @@ function CPINFP(){
 	x.innerHTML="<div class='center-block'><h4>Career Path</h4><p></p></div>";
 }
 
-var newsrcINFP = "INFP-pic2.jpg";
+var newsrcINFP = "celebpics/INFP-pic2.jpg";
 
 function changeImageINFP() {
-  if ( newsrcINFP == "INFP-pic2.jpg" ) {
-    document.images["picINFP"].src = "INFP-pic2.jpg";
+  if ( newsrcINFP == "celebpics/INFP-pic2.jpg" ) {
+    document.images["picINFP"].src = "celebpics/INFP-pic2.jpg";
     document.images["picINFP"].alt = "pic2";
-    newsrcINFP  = "INFP-pic.jpg";
+    newsrcINFP  = "celebpics/INFP-pic.jpg";
   }
   else {
-    document.images["picINFP"].src = "INFP-pic.jpg";
+    document.images["picINFP"].src = "celebpics/INFP-pic.jpg";
     document.images["picINFP"].alt = "pic";
-    newsrcINFP  = "INFP-pic2.jpg";
+    newsrcINFP  = "celebpics/INFP-pic2.jpg";
   }
 }
 
